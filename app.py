@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-
 st.title("Model Deployment: Diabetes Prediction App")
 st.write("This app predicts whether a person is likely to have diabetes using logistic regression.")
 
@@ -41,10 +40,9 @@ diabetes= diabetes.dropna()
 
 X = diabetes.iloc[:,[0,1,2,3,4,5,6,7]]
 Y = diabetes.iloc[:,0]
+
 diab=LogisticRegression()
 diab.fit(X,Y)
-
-
 
 # Predict
 
