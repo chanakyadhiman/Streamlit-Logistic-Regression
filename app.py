@@ -34,7 +34,7 @@ df=user_input_features()
 st.subheader('User Input Parameters')
 st.write(df)
 
-diabetes=pd.read_csv(r"C:\Users\chana\OneDrive\Documents\ExcelR_Docs\Assignments\Assignment to be done\8. Logistic Regression_15.10.2025\diabetes.csv")
+diabetes=pd.read_csv("diabetes.csv")
 diabetes.drop(["Outcome"],inplace=True,axis=1)
 diabetes= diabetes.dropna()
 
